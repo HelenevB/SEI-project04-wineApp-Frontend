@@ -87,11 +87,11 @@ If users have yet to create a “wineNight”, they can create one. All ‘wineN
 
 ### **The Planning & Development Process**
 --- 
-The idea for WineByMe came from our team leader Ivan; ahead of the project, he had been exploring possible APIs that could be incorporated into the build, one of which was Spoonacular  API. Whilst the API was predominately offering data for food nutrition, there is a wine section we could use to our advantage.
+The idea for WineByMe came from our team leader Ivan; ahead of the project, he had been exploring possible APIs that could be incorporated into the build, one of which was Spoonacular API. Whilst the API was predominately offering data for food nutrition, there is a wine section we could use to our advantage.
 
 This would have been the first project in which I utilised a third-party API, so I was excited to incorporate this into the development. 
 
-Once we got to grips with what the Spoonacular  API had to offer, we sketched out our initial ERD to map out the relationship between our models: 
+Once we got to grips with what the Spoonacular API had to offer, we sketched out our initial ERD to map out the relationship between our models: 
  
 
 <img src="photos/wineerd.png" width=100%>
@@ -131,7 +131,7 @@ We started by hardcoding each wine classification into the API, and from this, w
 
 The visual from the index helped to break down the requirements: we could see we had one 'div' ("wineIndex") that held multiple "divs`" (one for each wine classification). Therefore, to render correctly, we established we’d need the following:
 
-1. A data set to loop through, created within our application based on the Spoonacular  classification list: 
+1. A data set to loop through, created within our application based on the Spoonacular API classification list: 
 
 <img src="photos/datawine.png" width=100%>
 
@@ -188,7 +188,7 @@ Aside from the challenges above, it took some time within React to get the App f
 
 ### **Key Learnings**
 ---
-The key learning I have taken away from Project 4 is simply not to be afraid to code even if I feel the initial approach is not “dry”’. On this project, we got our initial ideas and thought processes down, giving us a visual view of what we wanted to achieve, and making it easier for us to refine. This process allowed me to consolidate my understanding, as each time we made a refinement, I knew why we were making it.  I now truly feel empowered to work through my thought process (even if it takes time) instead of seeking the “dry” solution from the offset.   
+The key learning I have taken away from Project 4 is simply not to be afraid to code even if I feel the initial approach is not “dry”’. On this project, we got our initial ideas and thought processes down, giving us a visual view of what we wanted to achieve, and making it easier for us to refine. This process allowed me to consolidate my understanding, as each time we made a refinement, I knew why we were making it. I now truly feel empowered to work through my thought process (even if it takes time) instead of seeking the “dry” solution from the offset.   
 
 
 
