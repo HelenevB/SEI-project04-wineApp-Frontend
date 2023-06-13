@@ -15,7 +15,7 @@ export default function FavouriteListDetails(props) {
         </div>
         <div className="details-Fav-Items" key={index}>
           <div className='image-box-detail-fav'>
-            <img className="details-image-fav" src={wine.imageUrl} />
+            <img className="details-image-fav" src={wine.imageUrl}  alt="wine-bottle"/>
           </div>
           <p className='description'>About the Wine: <br/><hr/>{wine.description}</p>
           <div className='links'>

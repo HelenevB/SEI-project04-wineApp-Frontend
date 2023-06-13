@@ -1,10 +1,7 @@
-import axios from 'axios'
-import React, { useState, useEffect } from 'react'
+
 import Button from 'react-bootstrap/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
 import AddToFavourite from './AddToFavourite';
 
 
@@ -17,9 +14,9 @@ export default function WineDetails(props) {
   const currentWine = props.currentWine
   let details;
 
-  const addToFavourites = props.wineNights.map((wineNight, index) => (
-    <Dropdown.Item>+ {wineNight.name} </Dropdown.Item>
-  ))
+  // const addToFavourites = props.wineNights.map((wineNight, index) => (
+  //   <Dropdown.Item>+ {wineNight.name} </Dropdown.Item>
+  // ))
 
   if (currentWine.id) {
 

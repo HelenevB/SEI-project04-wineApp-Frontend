@@ -1,18 +1,16 @@
 import  axios  from 'axios'
 import React from 'react'
-import FavouritesCreateForm from './FavouritesCreateForm'
 import { useState, useEffect } from 'react'
 import FavouriteListRow from './FavouriteListRow'
 import FavouritesEditForm from './FavouritesEditForm'
 import FavouriteListDetails from './FavouriteListDetails'
-import { Link } from 'react-router-dom'
 
 export default function FavouriteList(props) {
 
     const [isEdit, setIsEdit] = useState(false);
     const [currentFavouriteWine, setCurrentFavouriteWine] = useState({});
     const [ listDetails , setlistDetails] = useState({})
-    const [isShowDetials, setisShowDetials] = useState(false);
+    // const [isShowDetials, setisShowDetials] = useState(false);
   // const { wineId } = useParams()
   
 
@@ -72,7 +70,7 @@ console.log(list)
       // console.log(response.data.author) // take a look at what you get back!
       // console.log(`Fetching details for ${author.name}`);
       console.log(response.data.favouritewine)
-      setisShowDetials(true)
+      // setisShowDetials(true)
       setlistDetails(response.data.favouritewine)
         
       })
@@ -89,7 +87,7 @@ console.log(list)
               // console.log(response.data.author) // take a look at what you get back!
               // console.log(`Fetching details for ${author.name}`);
               console.log(response.data.favouritewine)
-              setisShowDetials(true)
+              // setisShowDetials(true)
               setlistDetails(response.data.favouritewine)
                 
               })

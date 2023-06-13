@@ -8,7 +8,7 @@ export default function WineRow(props) {
     <div className="wine-row">
       <div className='wineBox'>
         <div className='wineBoxCenter'>
-          <img className="wineImage" src={props.imageUrl} />
+          <img className="wineImage" src={props.imageUrl}  alt="wine bottle"/>
         </div>
       </div>
       <div className="wine-summary">

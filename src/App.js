@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react'
+import React, { useState, useEffect} from 'react'
 import Signup from './user/Signup'
 import Signin from './user/Signin'
-import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
 import axios from 'axios'
 import jwt_decode from 'jwt-decode'
 import { Alert } from "react-bootstrap"
@@ -11,10 +11,6 @@ import WineIndex from './wineindex/WineIndex';
 import WineCategoriesList from './winecategorieslist/WineCategoriesList'
 import FavouritesCreateForm from './favourites/FavouritesCreateForm'
 import FavouriteList from './favourites/FavouriteList'
-import Profile from './user/Profile'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown'
 
 
@@ -218,9 +214,7 @@ export default function App() {
               <Route path={`/${wineCategory.url}`} element={<WineCategoriesList wineNights={wineNights} wineList={wineList} wineCategory={wineCategory} loadWineIndex={loadWineIndex} isAuth={isAuth}></WineCategoriesList>}></Route>
               <Route path='/favouritewinelist' element={isAuth? <FavouriteList loadWineNight={loadWineNight} wineNights={wineNights} user={user.user.id} ></FavouriteList> : <Signin login={loginHandler} />}></Route>
               <Route path='/createfavouritewinelist' element={isAuth ? <FavouritesCreateForm user={user.user.id} addNewWineNight={addNewWineNight} ></FavouritesCreateForm> : <Signin login={loginHandler} />}></Route>
-              <Route path='/profile' element={<Profile ></Profile>}> </Route>
-
-        
+  
             </Routes>
           </div>
           <div>
